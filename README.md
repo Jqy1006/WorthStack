@@ -1,52 +1,52 @@
 # MindBlock (WorthStack)
 
-MindBlock (内部工程名 WorthStack) 是一款基于 SwiftUI 开发的 iOS 原生待办与时间价值管理应用。它不仅帮助你追踪时间的流逝，更着重于引导你诚实地面对自己的情绪与选择，将“花费在真正重要事物上的时间”具象化。
+MindBlock (internal project name `WorthStack`) is an iOS native to-do and time-value management application built with SwiftUI. It goes beyond merely tracking the passage of time; it focuses on guiding you to honestly confront your emotions and choices, visualizing the "time spent on what truly matters."
 
-## 核心设计理念
+## Core Design Philosophy
 
-“无论是任务如雨水般落下，还是在内心长成一片草甸，这都只是生活今天的模样。只需把握住自己，明天依然会准时到来。”
+"Whether tasks fall like rain, or grow into a meadow in your heart, this is simply the shape of life today. Keep hold of yourself, and tomorrow will still be waiting."
 
-应用将任务具象化为不同状态的“方块 (Blocks)”，未完成的待办事项如同“任务之雨 (Rain of Tasks)”悬于顶端，而已完成或被放弃的事项则沉淀为“生命草甸 (Life's Meadow)”。每一次完成、每一点投入，都在逐步构建你的生命图景。
+The app visualizes tasks into "Blocks" of different states. Pending tasks hang at the top as a "Rain of Tasks," while completed or abandoned events settle down into "Life's Meadow." Every completion and every bit of effort gradually builds the landscape of your life.
 
-## 主要功能特性
+## Key Features
 
-- **直观的视觉隐喻 (Main Page)**
-  - 顶部板块展示未完成的积压任务。
-  - 底部板块展示已完成和已放弃的事件记录。
-  - 点击方块可查看/编辑详情，长按可进行删除管理。
+- **Intuitive Visual Metaphor (Main Page)**
+  - The top section displays pending tasks.
+  - The bottom section displays completed and abandoned event records.
+  - Tap a block to view or edit details, and long-press to manage or delete it.
 
-- **多维度价值衡量 (Things To Do / Completed)**
-  - 记录事件的“预计时长”与“实际时长”。
-  - 引入了**客观价值 (Objective Score)**与**主观评分/最终价值 (Subjective/Final Score)**的独特评价体系，让你在完成任务前后重新审视其对你的真实意义。
+- **Multi-dimensional Value Measurement (Things To Do / Completed)**
+  - Records both the "Estimated Duration" and "Actual Duration" of events.
+  - Introduces a unique evaluation system combining **Objective Score** and **Subjective/Final Score**, encouraging you to re-evaluate the true meaning of a task before and after its completion.
 
-- **灵活的状态流转**
-  - **待办 (Todo)**：可设置倒计时以便追踪截止日期。
-  - **完成 (Completed)**：记录真实花费的时间，并给出最终反馈；如有需要可随时转回待办。
-  - **放弃 (Abandon)**：对于最终没有执行的任务，妥善记录而非粗暴删除，诚实面对放弃也是管理时间的一环。
+- **Flexible State Flow**
+  - **Todo**: Set countdowns to track deadlines easily.
+  - **Completed**: Record the actual time spent and provide a final rating. You can revert it back to a Todo if needed.
+  - **Abandon**: Instead of simply deleting unexecuted tasks, MindBlock records them properly. Honestly facing your abandoned choices is an essential part of time management.
 
-- **数据洞察与自定义 (Observe & Color)**
-  - **倒计时 (Countdown)**：实时追踪活动计时，高亮显示已逾期的重点任务。
-  - **颜色自定义 (Color)**：提供莫兰迪色系 (Morandi) 的全局色彩自定义与重置。
-  - **深度回顾 (Observe)**：整合时间投入与价值评估的个人专属分析视图，一站式阅读所有任务备忘与随笔。
+- **Data Insights & Customization (Observe & Color)**
+  - **Countdown**: Real-time tracking of active timers, highlighting overdue key tasks in red.
+  - **Color Configuration**: Offers global UI color customization based on the calming Morandi palette, with a one-tap reset.
+  - **Deep Observe**: A personalized analytics view integrating time investment and value assessment. Read all your task notes and reflections in one centralized place.
 
-## 技术栈
+## Technology Stack
 
-- 语言: Swift 6
-- 框架: SwiftUI
-- 平台: iOS 16.0+ / iPadOS 16.0+
+- Language: Swift 6
+- Framework: SwiftUI
+- Platform: iOS 16.0+ / iPadOS 16.0+
 
-## 🚀 未来规划与迭代方向 (Next Steps)
+## 🚀 Next Steps & Future Plans
 
-为了给用户带来更完善、更具持久价值的使用体验，我们计划在后续版本中引入以下架构层面的升级：
+To provide users with a more comprehensive and enduring experience, I plan to introduce the following architectural upgrades in future versions:
 
-1. **实现数据的长期安全管理**
-   - 当前数据主要存在于本地。未来将引入成熟的本地数据库（如 CoreData 或 SwiftData）结合云端加密备份（如 iCloud CloudKit 自动同步）机制。
-   - 增加数据导出/导入（JSON/CSV格式）与快照留存功能，确保用户的心血记录具有长达数年乃至数十年的绝对安全与持久性，避免丢失。
+1. **Long-term Secure Data Management**
+   - Currently, data is mainly stored locally. The plan is to integrate a robust local database (such as CoreData or SwiftData) combined with a secure cloud backup mechanism (like iCloud CloudKit automatic synchronization).
+   - Implement data import/export (JSON/CSV formats) and snapshot retention features, ensuring users' effort records remain perfectly secure and persistent for years or even decades, effectively preventing data loss.
 
-2. **支持身份验证与非本地登录**
-   - 摆脱纯单机应用的限制，接入安全的身份认证系统（如 Sign in with Apple / 邮箱注册登录）。
-   - 让长期管理的时间与价值数据可以跨越不同设备无缝流转，多端同步，带来更灵活的使用体验。
+2. **Authentication & Non-local Login Support**
+   - Break free from the limitations of a purely offline standalone app by integrating a secure authentication system (e.g., Sign in with Apple or Email registration/login).
+   - Allow long-term managed time and value data to flow seamlessly across different devices with multi-device synchronization, providing a much more flexible and resilient usage experience.
 
-3. **优化与深化价值衡量方式**
-   - 引入更加立体和动态的评价维度（例如：短期兴奋度 vs 长期复利价值，精力消耗 vs 情绪补给）。
-   - 借助自动化数据分析与图表（引入更多基于 Observe 界面的折线图、象限图展示），向用户直观呈现时间投入与个人价值成长的真实相关性，辅助用户进行更加智慧的精力分配与人生决策。
+3. **Optimizing & Deepening Value Measurement**
+   - Introduce more multi-dimensional and dynamic evaluation metrics (for example: short-term excitement vs. long-term compounding value, or energy depletion vs. emotional replenishment).
+   - Leverage automated data analysis and charts (adding more line charts and quadrant diagrams in the Observe interface) to intuitively demonstrate the true correlation between a user's time investment and personal value growth, assisting them in making wiser energy allocations and life decisions.
