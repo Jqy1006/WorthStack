@@ -1,6 +1,6 @@
-# MindBlock (WorthStack)
+# WorthStack
 
-MindBlock (internal project name `WorthStack`) is an iOS native to-do and time-value management application built with SwiftUI. It goes beyond merely tracking the passage of time; it focuses on guiding you to honestly confront your emotions and choices, visualizing the "time spent on what truly matters."
+WorthStack is an iOS native to-do and time-value management application built with SwiftUI. It goes beyond merely tracking the passage of time; it focuses on guiding you to honestly confront your emotions and choices, visualizing the "time spent on what truly matters."
 
 ## Core Design Philosophy
 
